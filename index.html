@@ -37,7 +37,7 @@
         <button @click="startGame">Start New Game</button>
       </section>
 
-      <section id="controls">
+      <section id="controls" v-else>
         <button @click="attackMonster">ATTACK</button>
         <button :disabled="mayUseSpecialAttack" @click="specialAttackMonster">
           SPECIAL ATTACK
